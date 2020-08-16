@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_details_only_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@color/colorAccent"
+    android:elevation="4dp"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#2196F3"
+        android:elevation="3dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="PRODUCT DETAILS"
+        android:textColor="#CDFFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_product_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="When two Hackers were murdered in Delhi, Delhi Police suspects that the case revolves around hacking, they begin their search to find a computer hacker who can help them crack this case. The head of the police team ACP Siddhanth (Manish Choudhary) accompanied by Inspector Bhalla (Varun Badola), stumbles across Mickey Arora (Manish Paul), a lazy but smart hacker who runs a grocery store in day time and creates viruses for anti-virus companies in the night along with his friends tomboy Chutney (Puja Gupta), Floppy, Pancho and Professor"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

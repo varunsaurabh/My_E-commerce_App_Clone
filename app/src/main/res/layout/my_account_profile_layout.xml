@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:background="@color/colorAccent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@color/colorAccent"
+        android:backgroundTint="#0FCFA9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cover_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cover" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/my_account_profile_img"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/pic"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/slider_backgroud"
+        android:backgroundTint="@color/colorAccent"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_account_profile_img">
+
+        <TextView
+            android:id="@+id/Username_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:text="Username : Saurabh kumar varun"
+            android:textColor="#DB000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/MobileNO_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="User Mobile : 9057677807"
+            android:textColor="#DB000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/email_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:text="User Email : skvaroon92@gmail.com"
+            android:textColor="#DB000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/change_profile_and_cover_pic_btn"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/stroke_shapr_corner"
+        android:padding="3dp"
+        android:tint="#CA000000"
+        app:layout_constraintBottom_toBottomOf="@+id/my_account_profile_img"
+        app:layout_constraintStart_toStartOf="@+id/my_account_profile_img"
+        app:srcCompat="@drawable/ic_edit_black_22dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PDLeftFragment">
+
+    <TextView
+        android:id="@+id/PDL_details_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="#000000"
+        android:text="When two Hackers were murdered in Delhi, Delhi Police suspects that the case revolves around hacking, they begin their search to find a computer hacker who can help them crack this case. The head of the police team ACP Siddhanth (Manish Choudhary) accompanied by Inspector Bhalla (Varun Badola), stumbles across Mickey Arora (Manish Paul), a lazy but smart hacker who runs a grocery store in day time and creates viruses for anti-virus companies in the night along with his friends tomboy Chutney (Puja Gupta), Floppy, Pancho and Professor"
+        />
+</FrameLayout>
